@@ -1,0 +1,49 @@
+{
+  "name": "nextgen-receptionist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "migrate": "tsx scripts/migrate.ts",
+    "seed": "tsx scripts/seed.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allanm101257-art/nextgen-receptionist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/allanm101257-art/nextgen-receptionist/issues"
+  },
+  "homepage": "https://github.com/allanm101257-art/nextgen-receptionist#readme",
+  "dependencies": {
+    "@hubspot/api-client": "^13.5.0",
+    "better-sqlite3": "^12.9.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "libphonenumber-js": "^1.12.41",
+    "livekit-server-sdk": "^2.15.1",
+    "twilio": "^5.13.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "@types/supertest": "^7.2.0",
+    "supertest": "^7.2.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.4"
+  }
+}
